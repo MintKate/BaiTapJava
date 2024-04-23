@@ -104,12 +104,12 @@ public class Employee {
         int code = scanner.nextInt();
         scanner.nextLine();
         System.out.print("Nhập lương nhân viên: ");
-        double salary = scanner.nextDouble();
+        double salary_rate = scanner.nextDouble();
         scanner.nextLine();
 
-        Employee newEmployee = new Employee(id, name, age, department, code, salary);
+        Employee newEmployee = new Employee(id, name, age, department, code, salary_rate);
         employees.add(newEmployee);
-
+        System.out.println();
         System.out.println("Thêm mới nhân viên thành công.");
     }
 
